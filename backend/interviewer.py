@@ -13,14 +13,14 @@ from llama_cpp import Llama
 # ==============================
 # CONFIG
 # ==============================
-face_path = "/Users/tejasy/Desktop/small.mp4"
+face_path = "small.mp4"
 
-checkpoint ="/Users/tejasy/Documents/documents/govt/Wav2Lip/checkpoints/wav2lip.pth"
+checkpoint ="wav2lip.pth"
 
-output_path = "/Users/tejasy/Documents/documents/govt/project/backend/results/output.mp4"
+output_path = "output.mp4"
 
 os.makedirs(
-    "/Users/tejasy/Documents/documents/govt/project/backend/results",
+    "results",
     exist_ok=True
 )
 
@@ -35,7 +35,7 @@ translator = Translator()
 print("Loading Phi model... ⏳")
 
 llm = Llama(
-    model_path="/Users/tejasy/Documents/documents/govt/project/phi-2.Q4_K_M.gguf",
+    model_path="phi-2.Q4_K_M.gguf",
     n_ctx=512,
     n_threads=4
 )
@@ -46,7 +46,7 @@ print("✅ Phi model loaded")
 # LOAD QUESTIONS
 # ==============================
 with open(
-    "/Users/tejasy/Documents/documents/govt/project/backend/skillfit_interview_questions.json",
+    "skillfit_interview_questions.json",
     "r"
 ) as f:
 
@@ -104,7 +104,7 @@ def ask_question(question, lang):
 def text_to_speech(
         text,
         lang="en",
-        filename="/Users/tejasy/Documents/documents/govt/project/q1.mp3"):
+        filename="q1.mp3"):
 
     try:
 
@@ -134,10 +134,10 @@ if os.path.exists(output_path):
 # WAV2LIP COMMAND
 # ==============================
 command = f"""
-python3 "/Users/tejasy/Documents/documents/govt/Wav2Lip/inference.py" \
+python3 "Wav2Lip/inference.py" \
 --checkpoint_path "{checkpoint}" \
 --face "{face_path}" \
---audio "/Users/tejasy/Documents/documents/govt/project/q1.mp3" \
+--audio "q1.mp3" \
 --outfile "{output_path}" \
 --resize_factor 2 \
 --wav2lip_batch_size 32
@@ -148,7 +148,7 @@ print("\n🎬 Running Wav2Lip...\n")
 print(command)
 
 result = os.system(
-    f'cd "/Users/tejasy/Documents/documents/govt/Wav2Lip" && {command}'
+    f'cd "Wav2Lip" && {command}'
 )
 
 print("\nCOMMAND RESULT:", result)
