@@ -166,7 +166,7 @@ if not st.session_state.started:
 
             response = requests.post(
 
-                "http://127.0.0.1:8000/interview",
+                "http://localhost:8000/interview",
 
                 json={
 
@@ -240,7 +240,7 @@ if st.session_state.started:
         """, unsafe_allow_html=True)
 
         video_path = \
-            "/Users/tejasy/Documents/documents/govt/project/backend/results/output.mp4"
+            "backend/results/output.mp4"
 
         if os.path.exists(video_path):
 
@@ -306,7 +306,7 @@ if st.session_state.started:
             st.audio(audio_bytes)
 
             audio_path = \
-                "/Users/tejasy/Documents/documents/govt/project/input.wav"
+                "input.wav"
 
             with open(audio_path, "wb") as f:
 
@@ -331,7 +331,7 @@ if st.session_state.started:
 
                 response = requests.post(
 
-                    "http://127.0.0.1:8000/interview_audio",
+                    "http://localhost:8000/interview_audio",
 
                     files=files,
 
