@@ -1,0 +1,13 @@
+.DS_Store
+*.mp3
+*.mp4
+*.wav
+*.zip
+*.gguf
+__pycache__/
+*.pyc
+venv/
+.env
+Wav2Lip/wav2lip_env/
+*.dist-info/
+site-packages/

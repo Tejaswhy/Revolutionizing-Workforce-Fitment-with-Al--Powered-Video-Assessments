@@ -1,0 +1,9 @@
+librosa==0.10.1
+numpy==1.23.5
+opencv-python==4.8.1.78
+torch
+torchvision
+tqdm
+numba
+scipy
+matplotlib

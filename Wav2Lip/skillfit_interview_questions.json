@@ -1,0 +1,1171 @@
+{
+  "system": "AI SkillFit - Video Assessment for Workforce Fitment",
+  "version": "1.0",
+  "directorate": "EDCS Karnataka",
+  "total_roles": 8,
+  "roles": [
+    {
+      "id": "R01",
+      "role": "Electronics Technician",
+      "category": "Polytechnic-skilled",
+      "language_support": ["Kannada", "Hindi", "English"],
+      "questions": [
+        {
+          "q_id": "R01_Q01",
+          "question_en": "Can you tell us your name, where you are from, and how many years of experience you have in electronics?",
+          "question_kn": "ನಿಮ್ಮ ಹೆಸರು, ನೀವು ಎಲ್ಲಿಂದ ಬಂದಿದ್ದೀರಿ ಮತ್ತು ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಕ್ಷೇತ್ರದಲ್ಲಿ ಎಷ್ಟು ವರ್ಷಗಳ ಅನುಭವ ಇದೆ ಎಂದು ಹೇಳಿ.",
+          "type": "introduction",
+          "expected_duration_sec": 45,
+          "scoring_focus": "communication clarity, confidence",
+          "rubric": "Score 1-5: Does candidate clearly state name, location and experience duration?"
+        },
+        {
+          "q_id": "R01_Q02",
+          "question_en": "What is the difference between AC and DC current? Give a real-life example of each.",
+          "question_kn": "AC ಮತ್ತು DC ವಿದ್ಯುತ್ ನಡುವಿನ ವ್ಯತ್ಯಾಸ ಏನು? ಪ್ರತಿಯೊಂದಕ್ಕೂ ನಿಜ ಜೀವನದ ಉದಾಹರಣೆ ಕೊಡಿ.",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "technical accuracy, relevance",
+          "rubric": "Score 1-5: Correct explanation of AC/DC + valid examples (fan/inverter vs battery/torch)"
+        },
+        {
+          "q_id": "R01_Q03",
+          "question_en": "Have you ever repaired a circuit board or electronic device? Describe step by step what you did.",
+          "question_kn": "ನೀವು ಎಂದಾದರೂ ಸರ್ಕ್ಯೂಟ್ ಬೋರ್ಡ್ ಅಥವಾ ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸಾಧನ ರಿಪೇರಿ ಮಾಡಿದ್ದೀರಾ? ಹಂತ ಹಂತವಾಗಿ ವಿವರಿಸಿ.",
+          "type": "practical_experience",
+          "expected_duration_sec": 90,
+          "scoring_focus": "real experience, process thinking",
+          "rubric": "Score 1-5: Logical repair process described — diagnosis, component check, fix, test"
+        },
+        {
+          "q_id": "R01_Q04",
+          "question_en": "What tools do you use regularly in your electronics work? Name at least five tools and explain their use.",
+          "question_kn": "ನಿಮ್ಮ ಕೆಲಸದಲ್ಲಿ ನೀವು ನಿಯಮಿತವಾಗಿ ಯಾವ ಉಪಕರಣಗಳನ್ನು ಬಳಸುತ್ತೀರಿ? ಕನಿಷ್ಠ ಐದು ಉಪಕರಣಗಳನ್ನು ಹೆಸರಿಸಿ ಮತ್ತು ಅವುಗಳ ಬಳಕೆ ವಿವರಿಸಿ.",
+          "type": "tools_knowledge",
+          "expected_duration_sec": 75,
+          "scoring_focus": "domain vocabulary, practical awareness",
+          "rubric": "Score 1-5: Names 5+ tools (multimeter, soldering iron, oscilloscope, etc.) with correct use"
+        },
+        {
+          "q_id": "R01_Q05",
+          "question_en": "What safety precautions do you follow when working with live electrical circuits?",
+          "question_kn": "ಲೈವ್ ವಿದ್ಯುತ್ ಸರ್ಕ್ಯೂಟ್‌ಗಳೊಂದಿಗೆ ಕೆಲಸ ಮಾಡುವಾಗ ನೀವು ಯಾವ ಸುರಕ್ಷತಾ ಕ್ರಮಗಳನ್ನು ಅನುಸರಿಸುತ್ತೀರಿ?",
+          "type": "safety_awareness",
+          "expected_duration_sec": 60,
+          "scoring_focus": "safety knowledge, responsibility",
+          "rubric": "Score 1-5: Mentions insulation gloves, isolation switch, discharge capacitors, no wet hands"
+        },
+        {
+          "q_id": "R01_Q06",
+          "question_en": "Can you read and understand electronic circuit diagrams or schematics? Explain how you would read a simple LED circuit.",
+          "question_kn": "ನೀವು ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸರ್ಕ್ಯೂಟ್ ಡಯಾಗ್ರಾಮ್‌ಗಳನ್ನು ಓದಬಲ್ಲಿರಾ? ಸಾಧಾರಣ LED ಸರ್ಕ್ಯೂಟ್ ಅನ್ನು ಹೇಗೆ ಓದುತ್ತೀರಿ ಎಂದು ವಿವರಿಸಿ.",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "schematic literacy",
+          "rubric": "Score 1-5: Understands symbols, flow direction, components in simple circuit"
+        },
+        {
+          "q_id": "R01_Q07",
+          "question_en": "What is a resistor and why is it used in a circuit? What happens if you use the wrong resistance value?",
+          "question_kn": "ರೆಸಿಸ್ಟರ್ ಎಂದರೇನು ಮತ್ತು ಅದನ್ನು ಸರ್ಕ್ಯೂಟ್‌ನಲ್ಲಿ ಏಕೆ ಬಳಸಲಾಗುತ್ತದೆ? ತಪ್ಪು ರೆಸಿಸ್ಟೆನ್ಸ್ ಮೌಲ್ಯ ಬಳಸಿದರೆ ಏನಾಗುತ್ತದೆ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "component understanding",
+          "rubric": "Score 1-5: Correct definition + consequence (component burn, excess current)"
+        },
+        {
+          "q_id": "R01_Q08",
+          "question_en": "Have you worked with microcontrollers or programmable devices like Arduino or PLC? Describe your experience.",
+          "question_kn": "ನೀವು ಆರ್ಡುಯಿನೋ ಅಥವಾ PLC ನಂತಹ ಮೈಕ್ರೋಕಂಟ್ರೋಲರ್‌ಗಳೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ? ನಿಮ್ಮ ಅನುಭವ ವಿವರಿಸಿ.",
+          "type": "advanced_skills",
+          "expected_duration_sec": 75,
+          "scoring_focus": "upskilling potential, advanced exposure",
+          "rubric": "Score 1-5: Any hands-on exposure to programmable devices is a plus"
+        },
+        {
+          "q_id": "R01_Q09",
+          "question_en": "Describe a time when you diagnosed a fault in an electronic device that was difficult to find. How did you solve it?",
+          "question_kn": "ಒಂದು ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸಾಧನದಲ್ಲಿ ತಪ್ಪು ಹುಡುಕಲು ಕಷ್ಟವಾದ ಸಂದರ್ಭ ವಿವರಿಸಿ. ಅದನ್ನು ಹೇಗೆ ಬಗೆಹರಿಸಿದಿರಿ?",
+          "type": "problem_solving",
+          "expected_duration_sec": 90,
+          "scoring_focus": "troubleshooting logic, persistence",
+          "rubric": "Score 1-5: Structured approach to diagnosis — observation, testing, fix"
+        },
+        {
+          "q_id": "R01_Q10",
+          "question_en": "What is the function of a transformer and where have you seen or used one in your work?",
+          "question_kn": "ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್‌ನ ಕಾರ್ಯ ಏನು? ನಿಮ್ಮ ಕೆಲಸದಲ್ಲಿ ಅದನ್ನು ಎಲ್ಲಿ ನೋಡಿದ್ದೀರಿ ಅಥವಾ ಬಳಸಿದ್ದೀರಿ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "applied knowledge",
+          "rubric": "Score 1-5: Step-up/step-down explanation + practical context (UPS, inverter, charger)"
+        },
+        {
+          "q_id": "R01_Q11",
+          "question_en": "Are you comfortable working in a factory or industrial setting with large machinery? Have you done this before?",
+          "question_kn": "ನೀವು ಕಾರ್ಖಾನೆ ಅಥವಾ ಕೈಗಾರಿಕಾ ವಾತಾವರಣದಲ್ಲಿ ಕೆಲಸ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ? ಮೊದಲು ಇಂಥ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+          "type": "work_readiness",
+          "expected_duration_sec": 45,
+          "scoring_focus": "industrial adaptability",
+          "rubric": "Score 1-5: Positive attitude + past industrial exposure is a strong indicator"
+        },
+        {
+          "q_id": "R01_Q12",
+          "question_en": "Do you hold any certifications or have you completed any training courses related to electronics? Please describe.",
+          "question_kn": "ನಿಮಗೆ ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದಾದರೂ ಪ್ರಮಾಣಪತ್ರ ಅಥವಾ ತರಬೇತಿ ಇದೆಯೇ?",
+          "type": "qualifications",
+          "expected_duration_sec": 45,
+          "scoring_focus": "formal training, credibility",
+          "rubric": "Score 1-5: ITI / Diploma / NSDC / private cert mentioned adds credibility"
+        },
+        {
+          "q_id": "R01_Q13",
+          "question_en": "How do you keep yourself updated with new electronics technologies or repair techniques?",
+          "question_kn": "ಹೊಸ ತಂತ್ರಜ್ಞಾನ ಮತ್ತು ರಿಪೇರಿ ವಿಧಾನಗಳ ಬಗ್ಗೆ ನೀವು ಹೇಗೆ ಮಾಹಿತಿ ಪಡೆಯುತ್ತೀರಿ?",
+          "type": "learning_attitude",
+          "expected_duration_sec": 45,
+          "scoring_focus": "growth mindset, self-learning",
+          "rubric": "Score 1-5: YouTube, peer learning, training programs, reading manuals — any valid answer"
+        },
+        {
+          "q_id": "R01_Q14",
+          "question_en": "Are you willing to relocate or travel to different districts in Karnataka for work assignments?",
+          "question_kn": "ಕೆಲಸದ ಅಗತ್ಯಕ್ಕಾಗಿ ಕರ್ನಾಟಕದ ಬೇರೆ ಜಿಲ್ಲೆಗಳಿಗೆ ಹೋಗಲು ನೀವು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "mobility_preference",
+          "expected_duration_sec": 30,
+          "scoring_focus": "flexibility, deployment readiness",
+          "rubric": "Score 1-5: Clear yes/no with reasoning; openness to mobility is a positive signal"
+        },
+        {
+          "q_id": "R01_Q15",
+          "question_en": "What are your salary expectations and when are you available to start work?",
+          "question_kn": "ನಿಮ್ಮ ವೇತನ ನಿರೀಕ್ಷೆ ಏನು ಮತ್ತು ನೀವು ಯಾವಾಗ ಕೆಲಸ ಪ್ರಾರಂಭಿಸಬಹುದು?",
+          "type": "availability",
+          "expected_duration_sec": 30,
+          "scoring_focus": "realistic expectations, urgency",
+          "rubric": "Score 1-5: Reasonable salary range stated + clear availability date"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "role": "Wireman",
+      "category": "Polytechnic-skilled",
+      "language_support": ["Kannada", "Hindi", "English"],
+      "questions": [
+        {
+          "q_id": "R02_Q01",
+          "question_en": "Please introduce yourself — your name, district, and how long you have been working as a wireman.",
+          "question_kn": "ನಿಮ್ಮನ್ನು ಪರಿಚಯಿಸಿಕೊಳ್ಳಿ — ನಿಮ್ಮ ಹೆಸರು, ಜಿಲ್ಲೆ ಮತ್ತು ವೈರ್‌ಮ್ಯಾನ್ ಆಗಿ ಎಷ್ಟು ವರ್ಷ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ.",
+          "type": "introduction",
+          "expected_duration_sec": 45,
+          "scoring_focus": "communication, confidence",
+          "rubric": "Score 1-5: Clear self-introduction with relevant work history"
+        },
+        {
+          "q_id": "R02_Q02",
+          "question_en": "What is the difference between a single-phase and three-phase electrical connection? Where is each used?",
+          "question_kn": "ಏಕ-ಹಂತ ಮತ್ತು ಮೂರು-ಹಂತದ ವಿದ್ಯುತ್ ಸಂಪರ್ಕದ ನಡುವಿನ ವ್ಯತ್ಯಾಸ ಏನು? ಪ್ರತಿಯೊಂದು ಎಲ್ಲಿ ಬಳಸಲಾಗುತ್ತದೆ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "electrical basics",
+          "rubric": "Score 1-5: Single-phase = homes/small loads; Three-phase = motors/industrial — correct examples"
+        },
+        {
+          "q_id": "R02_Q03",
+          "question_en": "How do you carry out wiring for a new residential building? Walk us through the process from start to finish.",
+          "question_kn": "ಹೊಸ ವಸತಿ ಕಟ್ಟಡಕ್ಕೆ ವೈರಿಂಗ್ ಮಾಡುವ ಪ್ರಕ್ರಿಯೆ ಹೇಗಿರುತ್ತದೆ? ಪ್ರಾರಂಭದಿಂದ ಅಂತ್ಯದವರೆಗೆ ವಿವರಿಸಿ.",
+          "type": "practical_experience",
+          "expected_duration_sec": 90,
+          "scoring_focus": "process knowledge, completeness",
+          "rubric": "Score 1-5: Load calculation, conduit laying, wire routing, DB setup, testing — all mentioned"
+        },
+        {
+          "q_id": "R02_Q04",
+          "question_en": "What types of wires and cables have you used? Explain when you would use copper vs aluminium wire.",
+          "question_kn": "ನೀವು ಯಾವ ರೀತಿಯ ತಂತಿಗಳು ಮತ್ತು ಕೇಬಲ್‌ಗಳನ್ನು ಬಳಸಿದ್ದೀರಿ? ತಾಮ್ರ ಮತ್ತು ಅಲ್ಯೂಮಿನಿಯಂ ತಂತಿಯನ್ನು ಯಾವಾಗ ಬಳಸಬೇಕು?",
+          "type": "materials_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "material selection knowledge",
+          "rubric": "Score 1-5: Copper for indoor/precision; aluminium for overhead/bulk — correct reasoning"
+        },
+        {
+          "q_id": "R02_Q05",
+          "question_en": "What is an MCB and an ELCB? Why are they important in an electrical installation?",
+          "question_kn": "MCB ಮತ್ತು ELCB ಎಂದರೇನು? ವಿದ್ಯುತ್ ಅಳವಡಿಕೆಯಲ್ಲಿ ಅವು ಏಕೆ ಮುಖ್ಯ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "protection device knowledge",
+          "rubric": "Score 1-5: MCB = overcurrent protection; ELCB = earth leakage — both explained correctly"
+        },
+        {
+          "q_id": "R02_Q06",
+          "question_en": "How do you check if a wire is live without touching it? What instruments do you use?",
+          "question_kn": "ತಂತಿಯನ್ನು ಮುಟ್ಟದೆ ಅದು ಲೈವ್ ಆಗಿದೆಯೇ ಎಂದು ಹೇಗೆ ಪರಿಶೀಲಿಸುತ್ತೀರಿ?",
+          "type": "safety_awareness",
+          "expected_duration_sec": 45,
+          "scoring_focus": "safe working practice",
+          "rubric": "Score 1-5: Phase tester, non-contact voltage tester, clamp meter — correct tools"
+        },
+        {
+          "q_id": "R02_Q07",
+          "question_en": "Have you done industrial wiring such as motor connections or control panels? Describe your experience.",
+          "question_kn": "ನೀವು ಮೋಟರ್ ಸಂಪರ್ಕ ಅಥವಾ ಕಂಟ್ರೋಲ್ ಪ್ಯಾನೆಲ್‌ಗಳಂತಹ ಕೈಗಾರಿಕಾ ವೈರಿಂಗ್ ಮಾಡಿದ್ದೀರಾ?",
+          "type": "advanced_skills",
+          "expected_duration_sec": 75,
+          "scoring_focus": "industrial exposure",
+          "rubric": "Score 1-5: Motor DOL/Star-Delta starters, panel wiring knowledge adds value"
+        },
+        {
+          "q_id": "R02_Q08",
+          "question_en": "What do you do if a circuit breaker keeps tripping repeatedly? How do you diagnose the problem?",
+          "question_kn": "ಸರ್ಕ್ಯೂಟ್ ಬ್ರೇಕರ್ ಪದೇ ಪದೇ ಟ್ರಿಪ್ ಆದರೆ ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+          "type": "problem_solving",
+          "expected_duration_sec": 75,
+          "scoring_focus": "fault diagnosis logic",
+          "rubric": "Score 1-5: Overload check, short circuit check, faulty appliance isolation — logical sequence"
+        },
+        {
+          "q_id": "R02_Q09",
+          "question_en": "What is earthing and why is it essential? How do you install an earth pit?",
+          "question_kn": "ಅರ್ಥಿಂಗ್ ಎಂದರೇನು ಮತ್ತು ಅದು ಏಕೆ ಅವಶ್ಯಕ? ಅರ್ಥ್ ಪಿಟ್ ಹೇಗೆ ಅಳವಡಿಸುತ್ತೀರಿ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 75,
+          "scoring_focus": "safety fundamentals",
+          "rubric": "Score 1-5: Purpose (shock prevention) + plate/pipe earthing procedure described"
+        },
+        {
+          "q_id": "R02_Q10",
+          "question_en": "Do you know how to read electrical layout drawings or wiring diagrams provided by a contractor?",
+          "question_kn": "ಕಾಂಟ್ರಾಕ್ಟರ್ ನೀಡಿದ ಎಲೆಕ್ಟ್ರಿಕಲ್ ಲೇಔಟ್ ಡ್ರಾಯಿಂಗ್‌ಗಳನ್ನು ನೀವು ಓದಬಲ್ಲಿರಾ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 45,
+          "scoring_focus": "drawing literacy",
+          "rubric": "Score 1-5: Can interpret basic symbols, circuit paths, load points"
+        },
+        {
+          "q_id": "R02_Q11",
+          "question_en": "What personal protective equipment (PPE) do you always wear while doing electrical work?",
+          "question_kn": "ವಿದ್ಯುತ್ ಕೆಲಸ ಮಾಡುವಾಗ ನೀವು ಯಾವ ವೈಯಕ್ತಿಕ ಸುರಕ್ಷತಾ ಸಲಕರಣೆಗಳನ್ನು ಧರಿಸುತ್ತೀರಿ?",
+          "type": "safety_awareness",
+          "expected_duration_sec": 45,
+          "scoring_focus": "safety habits",
+          "rubric": "Score 1-5: Insulated gloves, safety shoes, helmet, safety goggles — at least 3 mentioned"
+        },
+        {
+          "q_id": "R02_Q12",
+          "question_en": "Do you have a wireman licence issued by the Electrical Inspectorate? If not, are you willing to obtain one?",
+          "question_kn": "ನಿಮ್ಮ ಬಳಿ ವಿದ್ಯುತ್ ಇನ್ಸ್ಪೆಕ್ಟರೇಟ್ ನೀಡಿದ ವೈರ್‌ಮ್ಯಾನ್ ಲೈಸೆನ್ಸ್ ಇದೆಯೇ?",
+          "type": "qualifications",
+          "expected_duration_sec": 30,
+          "scoring_focus": "compliance, legal readiness",
+          "rubric": "Score 1-5: Having licence = top score; willing to get = medium; unaware = low"
+        },
+        {
+          "q_id": "R02_Q13",
+          "question_en": "Have you worked under a licensed electrical contractor? What was your role in that team?",
+          "question_kn": "ನೀವು ಲೈಸೆನ್ಸ್ ಹೊಂದಿದ ಎಲೆಕ್ಟ್ರಿಕಲ್ ಕಾಂಟ್ರಾಕ್ಟರ್ ಅಡಿಯಲ್ಲಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ? ತಂಡದಲ್ಲಿ ನಿಮ್ಮ ಪಾತ್ರ ಏನಾಗಿತ್ತು?",
+          "type": "work_experience",
+          "expected_duration_sec": 60,
+          "scoring_focus": "team experience, hierarchy awareness",
+          "rubric": "Score 1-5: Clear description of role in a team setup"
+        },
+        {
+          "q_id": "R02_Q14",
+          "question_en": "Are you comfortable working at heights such as on scaffolding or ladders for wiring work?",
+          "question_kn": "ಸ್ಕ್ಯಾಫೋಲ್ಡಿಂಗ್ ಅಥವಾ ಏಣಿಯ ಮೇಲೆ ವೈರಿಂಗ್ ಕೆಲಸ ಮಾಡಲು ನೀವು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "work_readiness",
+          "expected_duration_sec": 30,
+          "scoring_focus": "physical readiness",
+          "rubric": "Score 1-5: Positive with prior experience = strong; hesitant = lower"
+        },
+        {
+          "q_id": "R02_Q15",
+          "question_en": "What is your preferred type of project — residential, commercial, or industrial? Why?",
+          "question_kn": "ನಿಮಗೆ ಯಾವ ರೀತಿಯ ಯೋಜನೆ ಇಷ್ಟ — ವಸತಿ, ವಾಣಿಜ್ಯ ಅಥವಾ ಕೈಗಾರಿಕಾ? ಏಕೆ?",
+          "type": "preference_fitment",
+          "expected_duration_sec": 45,
+          "scoring_focus": "self-awareness, role fitment",
+          "rubric": "Score 1-5: Clear preference with reasoning helps map to suitable job openings"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "role": "Painter (Industrial)",
+      "category": "Blue-collar",
+      "language_support": ["Kannada", "Hindi", "English"],
+      "questions": [
+        {
+          "q_id": "R03_Q01",
+          "question_en": "Tell us your name, hometown, and how long you have been working as an industrial painter.",
+          "question_kn": "ನಿಮ್ಮ ಹೆಸರು, ಊರು ಮತ್ತು ಕೈಗಾರಿಕಾ ಚಿತ್ರಕಾರರಾಗಿ ಎಷ್ಟು ವರ್ಷ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ ಎಂದು ಹೇಳಿ.",
+          "type": "introduction",
+          "expected_duration_sec": 45,
+          "scoring_focus": "communication, work history",
+          "rubric": "Score 1-5: Clear name + location + years of experience"
+        },
+        {
+          "q_id": "R03_Q02",
+          "question_en": "What is the difference between primer, undercoat, and topcoat? Why is each layer important?",
+          "question_kn": "ಪ್ರೈಮರ್, ಅಂಡರ್‌ಕೋಟ್ ಮತ್ತು ಟಾಪ್‌ಕೋಟ್ ನಡುವಿನ ವ್ಯತ್ಯಾಸ ಏನು? ಪ್ರತಿ ಪದರ ಏಕೆ ಮುಖ್ಯ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "painting process knowledge",
+          "rubric": "Score 1-5: Primer = adhesion/corrosion protection; undercoat = fill; topcoat = finish"
+        },
+        {
+          "q_id": "R03_Q03",
+          "question_en": "What surface preparation steps do you follow before painting a metal structure?",
+          "question_kn": "ಲೋಹದ ರಚನೆಗೆ ಬಣ್ಣ ಹಚ್ಚುವ ಮೊದಲು ನೀವು ಯಾವ ಮೇಲ್ಮೈ ತಯಾರಿ ಹಂತಗಳನ್ನು ಅನುಸರಿಸುತ್ತೀರಿ?",
+          "type": "practical_experience",
+          "expected_duration_sec": 75,
+          "scoring_focus": "process discipline",
+          "rubric": "Score 1-5: Rust removal, degreasing, sandblasting/sanding, priming — sequence matters"
+        },
+        {
+          "q_id": "R03_Q04",
+          "question_en": "Have you used spray painting equipment? What types of spray guns have you operated?",
+          "question_kn": "ನೀವು ಸ್ಪ್ರೇ ಪೇಂಟಿಂಗ್ ಉಪಕರಣ ಬಳಸಿದ್ದೀರಾ? ಯಾವ ರೀತಿಯ ಸ್ಪ್ರೇ ಗನ್‌ಗಳನ್ನು ಬಳಸಿದ್ದೀರಿ?",
+          "type": "tools_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "equipment proficiency",
+          "rubric": "Score 1-5: HVLP, airless, conventional — any specific equipment knowledge valued"
+        },
+        {
+          "q_id": "R03_Q05",
+          "question_en": "What safety gear do you wear when working with industrial paints and chemicals?",
+          "question_kn": "ಕೈಗಾರಿಕಾ ಬಣ್ಣ ಮತ್ತು ರಾಸಾಯನಿಕಗಳೊಂದಿಗೆ ಕೆಲಸ ಮಾಡುವಾಗ ನೀವು ಯಾವ ಸುರಕ್ಷತಾ ಸಲಕರಣೆ ಧರಿಸುತ್ತೀರಿ?",
+          "type": "safety_awareness",
+          "expected_duration_sec": 45,
+          "scoring_focus": "chemical safety knowledge",
+          "rubric": "Score 1-5: Respirator, gloves, goggles, coveralls — at least 3 mentioned correctly"
+        },
+        {
+          "q_id": "R03_Q06",
+          "question_en": "What types of paints have you worked with — epoxy, enamel, latex, anti-rust? Where was each used?",
+          "question_kn": "ನೀವು ಯಾವ ರೀತಿಯ ಬಣ್ಣಗಳೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ — ಎಪಾಕ್ಸಿ, ಎನಾಮೆಲ್, ಆಂಟಿ-ರಸ್ಟ್?",
+          "type": "materials_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "paint type awareness",
+          "rubric": "Score 1-5: Correct use case per paint type shows professional experience"
+        },
+        {
+          "q_id": "R03_Q07",
+          "question_en": "Have you worked at heights on scaffolding or elevated platforms? Are you comfortable with this?",
+          "question_kn": "ನೀವು ಎತ್ತರದ ಸ್ಕ್ಯಾಫೋಲ್ಡ್ ಅಥವಾ ಎತ್ತರಿಸಿದ ವೇದಿಕೆಗಳಲ್ಲಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+          "type": "work_readiness",
+          "expected_duration_sec": 45,
+          "scoring_focus": "height work comfort",
+          "rubric": "Score 1-5: Prior experience + comfort with safety harness use is ideal"
+        },
+        {
+          "q_id": "R03_Q08",
+          "question_en": "How do you ensure an even coat of paint without drips or runs on a large metal surface?",
+          "question_kn": "ದೊಡ್ಡ ಲೋಹದ ಮೇಲ್ಮೈಯಲ್ಲಿ ಸಮ ಪದರದ ಬಣ್ಣ ಖಚಿತಪಡಿಸಲು ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+          "type": "quality_awareness",
+          "expected_duration_sec": 60,
+          "scoring_focus": "finish quality knowledge",
+          "rubric": "Score 1-5: Distance, pressure, speed of stroke, thinning ratio — technique awareness"
+        },
+        {
+          "q_id": "R03_Q09",
+          "question_en": "What is sandblasting? Have you been involved in sandblasting work before painting?",
+          "question_kn": "ಸ್ಯಾಂಡ್‌ಬ್ಲಾಸ್ಟಿಂಗ್ ಎಂದರೇನು? ಬಣ್ಣ ಹಚ್ಚುವ ಮೊದಲು ಸ್ಯಾಂಡ್‌ಬ್ಲಾಸ್ಟಿಂಗ್ ಕೆಲಸದಲ್ಲಿ ತೊಡಗಿದ್ದೀರಾ?",
+          "type": "advanced_skills",
+          "expected_duration_sec": 60,
+          "scoring_focus": "surface preparation expertise",
+          "rubric": "Score 1-5: Understanding of abrasive blasting process + involvement level"
+        },
+        {
+          "q_id": "R03_Q10",
+          "question_en": "Have you worked in painting bridges, storage tanks, pipelines, or heavy structures? Describe the project.",
+          "question_kn": "ನೀವು ಸೇತುವೆ, ಟ್ಯಾಂಕ್, ಪೈಪ್‌ಲೈನ್ ಅಥವಾ ಭಾರೀ ರಚನೆಗಳ ಮೇಲೆ ಬಣ್ಣ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+          "type": "project_experience",
+          "expected_duration_sec": 75,
+          "scoring_focus": "industrial scale experience",
+          "rubric": "Score 1-5: Specific large project description with role and scale"
+        },
+        {
+          "q_id": "R03_Q11",
+          "question_en": "How do you mix paint to get the right consistency for spraying? What is the role of thinner?",
+          "question_kn": "ಸ್ಪ್ರೇ ಮಾಡಲು ಸರಿಯಾದ ಸ್ಥಿರತೆ ಪಡೆಯಲು ಬಣ್ಣ ಹೇಗೆ ಮಿಶ್ರ ಮಾಡುತ್ತೀರಿ? ಥಿನ್ನರ್ ಪಾತ್ರ ಏನು?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "paint mixing knowledge",
+          "rubric": "Score 1-5: Correct ratio knowledge, viscosity cup reference, thinner function explained"
+        },
+        {
+          "q_id": "R03_Q12",
+          "question_en": "Do you have any certification from ITI or NSDC for painting trade? Please describe.",
+          "question_kn": "ಪೇಂಟಿಂಗ್ ವ್ಯಾಪಾರಕ್ಕಾಗಿ ITI ಅಥವಾ NSDC ಪ್ರಮಾಣಪತ್ರ ಇದೆಯೇ?",
+          "type": "qualifications",
+          "expected_duration_sec": 30,
+          "scoring_focus": "formal training",
+          "rubric": "Score 1-5: Certified = strong; informal apprentice = medium; no training = lower"
+        },
+        {
+          "q_id": "R03_Q13",
+          "question_en": "What is the drying time for epoxy paint and what conditions affect it?",
+          "question_kn": "ಎಪಾಕ್ಸಿ ಬಣ್ಣದ ಒಣಗುವ ಸಮಯ ಎಷ್ಟು ಮತ್ತು ಅದನ್ನು ಯಾವ ಪರಿಸ್ಥಿತಿಗಳು ಪ್ರಭಾವಿಸುತ್ತವೆ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 45,
+          "scoring_focus": "drying/curing knowledge",
+          "rubric": "Score 1-5: Temperature, humidity, thickness of coat affect drying — practical awareness"
+        },
+        {
+          "q_id": "R03_Q14",
+          "question_en": "Are you available for long-term site postings outside your home district if the job requires it?",
+          "question_kn": "ಕೆಲಸಕ್ಕೆ ಅಗತ್ಯವಿದ್ದರೆ ನಿಮ್ಮ ಜಿಲ್ಲೆಯ ಹೊರಗೆ ದೀರ್ಘಕಾಲ ಕೆಲಸ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "mobility_preference",
+          "expected_duration_sec": 30,
+          "scoring_focus": "deployment flexibility",
+          "rubric": "Score 1-5: Clear yes with reasoning = strong deployment candidate"
+        },
+        {
+          "q_id": "R03_Q15",
+          "question_en": "What is your daily wage expectation and do you prefer contract-based or permanent employment?",
+          "question_kn": "ನಿಮ್ಮ ದಿನದ ಸಂಬಳ ನಿರೀಕ್ಷೆ ಏನು ಮತ್ತು ಗುತ್ತಿಗೆ ಅಥವಾ ಶಾಶ್ವತ ಉದ್ಯೋಗ — ಯಾವುದು ಇಷ್ಟ?",
+          "type": "availability",
+          "expected_duration_sec": 30,
+          "scoring_focus": "expectation alignment",
+          "rubric": "Score 1-5: Realistic wage + clear employment type preference"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "role": "Mason / Construction Worker",
+      "category": "Blue-collar",
+      "language_support": ["Kannada", "Hindi", "English"],
+      "questions": [
+        {
+          "q_id": "R04_Q01",
+          "question_en": "Please tell us your name, where you are from, and how many years you have worked in construction.",
+          "question_kn": "ನಿಮ್ಮ ಹೆಸರು, ಎಲ್ಲಿಂದ ಬಂದಿದ್ದೀರಿ ಮತ್ತು ನಿರ್ಮಾಣ ಕ್ಷೇತ್ರದಲ್ಲಿ ಎಷ್ಟು ವರ್ಷ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ ಹೇಳಿ.",
+          "type": "introduction",
+          "expected_duration_sec": 45,
+          "scoring_focus": "communication, work background",
+          "rubric": "Score 1-5: Clear name, origin, experience years"
+        },
+        {
+          "q_id": "R04_Q02",
+          "question_en": "What is the correct ratio of cement, sand, and water for making good quality mortar for brickwork?",
+          "question_kn": "ಇಟ್ಟಿಗೆ ಕೆಲಸಕ್ಕಾಗಿ ಉತ್ತಮ ಗಾರೆ ತಯಾರಿಸಲು ಸಿಮೆಂಟ್, ಮರಳು ಮತ್ತು ನೀರಿನ ಸರಿಯಾದ ಅನುಪಾತ ಏನು?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "mix design knowledge",
+          "rubric": "Score 1-5: 1:4 or 1:6 ratio for masonry mortar — correct range accepted"
+        },
+        {
+          "q_id": "R04_Q03",
+          "question_en": "How do you ensure a wall is perfectly vertical and straight while laying bricks? What tools do you use?",
+          "question_kn": "ಇಟ್ಟಿಗೆ ಜೋಡಿಸುವಾಗ ಗೋಡೆ ಸರಿಯಾಗಿ ಲಂಬವಾಗಿ ಮತ್ತು ನೇರವಾಗಿರುವಂತೆ ಖಚಿತಪಡಿಸಲು ಯಾವ ಉಪಕರಣ ಬಳಸುತ್ತೀರಿ?",
+          "type": "practical_skills",
+          "expected_duration_sec": 60,
+          "scoring_focus": "precision skills",
+          "rubric": "Score 1-5: Plumb bob, spirit level, string line — correct tool usage described"
+        },
+        {
+          "q_id": "R04_Q04",
+          "question_en": "What is the difference between a load-bearing wall and a partition wall? Have you worked on both?",
+          "question_kn": "ಲೋಡ್-ಬೇರಿಂಗ್ ಗೋಡೆ ಮತ್ತು ವಿಭಾಜಕ ಗೋಡೆ ನಡುವಿನ ವ್ಯತ್ಯಾಸ ಏನು?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "structural awareness",
+          "rubric": "Score 1-5: Load-bearing = structural; partition = non-structural divider — clear distinction"
+        },
+        {
+          "q_id": "R04_Q05",
+          "question_en": "Have you done plastering work? Describe the steps you follow for a smooth plaster finish.",
+          "question_kn": "ನೀವು ಪ್ಲಾಸ್ಟರಿಂಗ್ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ? ಮೃದು ಪ್ಲಾಸ್ಟರ್ ಮಾಡಲು ನೀವು ಅನುಸರಿಸುವ ಹಂತಗಳನ್ನು ವಿವರಿಸಿ.",
+          "type": "practical_experience",
+          "expected_duration_sec": 75,
+          "scoring_focus": "plastering skills",
+          "rubric": "Score 1-5: Wet surface, apply undercoat, level with float, finish coat — sequence correct"
+        },
+        {
+          "q_id": "R04_Q06",
+          "question_en": "What types of foundations have you worked on — strip, raft, or pile foundation?",
+          "question_kn": "ನೀವು ಯಾವ ರೀತಿಯ ಅಡಿಪಾಯ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ — ಸ್ಟ್ರಿಪ್, ರಾಫ್ಟ್ ಅಥವಾ ಪೈಲ್ ಫೌಂಡೇಶನ್?",
+          "type": "project_experience",
+          "expected_duration_sec": 60,
+          "scoring_focus": "foundation work exposure",
+          "rubric": "Score 1-5: Any specific foundation type with work description valued"
+        },
+        {
+          "q_id": "R04_Q07",
+          "question_en": "What safety practices do you follow on a construction site to prevent accidents?",
+          "question_kn": "ನಿರ್ಮಾಣ ಸ್ಥಳದಲ್ಲಿ ಅಪಘಾತ ತಡೆಯಲು ನೀವು ಯಾವ ಸುರಕ್ಷತಾ ಕ್ರಮಗಳನ್ನು ಅನುಸರಿಸುತ್ತೀರಿ?",
+          "type": "safety_awareness",
+          "expected_duration_sec": 60,
+          "scoring_focus": "site safety habits",
+          "rubric": "Score 1-5: Helmet, safety shoes, harness for heights, barricading, tool storage — 3+ mentioned"
+        },
+        {
+          "q_id": "R04_Q08",
+          "question_en": "How do you calculate the number of bricks needed to build a wall of given dimensions?",
+          "question_kn": "ನಿರ್ದಿಷ್ಟ ಅಳತೆಯ ಗೋಡೆ ನಿರ್ಮಿಸಲು ಎಷ್ಟು ಇಟ್ಟಿಗೆಗಳು ಬೇಕು ಎಂದು ಹೇಗೆ ಲೆಕ್ಕ ಹಾಕುತ್ತೀರಿ?",
+          "type": "estimation_skills",
+          "expected_duration_sec": 60,
+          "scoring_focus": "basic quantity estimation",
+          "rubric": "Score 1-5: Volume calculation + bricks per cubic foot/metre — any logical approach"
+        },
+        {
+          "q_id": "R04_Q09",
+          "question_en": "Have you ever worked on concrete pouring or RCC slab work? What was your role?",
+          "question_kn": "ನೀವು ಕಾಂಕ್ರೀಟ್ ಸುರಿಯುವ ಅಥವಾ RCC ಸ್ಲ್ಯಾಬ್ ಕೆಲಸದಲ್ಲಿ ಭಾಗವಹಿಸಿದ್ದೀರಾ?",
+          "type": "advanced_skills",
+          "expected_duration_sec": 75,
+          "scoring_focus": "concrete work exposure",
+          "rubric": "Score 1-5: Mixing, placing, vibrating, curing — any specific role described"
+        },
+        {
+          "q_id": "R04_Q10",
+          "question_en": "What is curing and why is it important after concrete or plaster work?",
+          "question_kn": "ಕ್ಯೂರಿಂಗ್ ಎಂದರೇನು ಮತ್ತು ಕಾಂಕ್ರೀಟ್ ಅಥವಾ ಪ್ಲಾಸ್ಟರ್ ಕೆಲಸದ ನಂತರ ಅದು ಏಕೆ ಮುಖ್ಯ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 45,
+          "scoring_focus": "material science basics",
+          "rubric": "Score 1-5: Prevents cracking, ensures strength development — correct explanation"
+        },
+        {
+          "q_id": "R04_Q11",
+          "question_en": "Have you done tile or flooring work? What adhesives or methods did you use?",
+          "question_kn": "ನೀವು ಟೈಲ್ ಅಥವಾ ಫ್ಲೋರಿಂಗ್ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ? ಯಾವ ಅಂಟು ಅಥವಾ ವಿಧಾನ ಬಳಸಿದ್ದೀರಿ?",
+          "type": "practical_experience",
+          "expected_duration_sec": 60,
+          "scoring_focus": "finishing skills",
+          "rubric": "Score 1-5: Tile adhesive, grout, levelling compound — any correct technique"
+        },
+        {
+          "q_id": "R04_Q12",
+          "question_en": "What is the largest construction project you have worked on? What was your specific role?",
+          "question_kn": "ನೀವು ಕೆಲಸ ಮಾಡಿದ ಅತಿ ದೊಡ್ಡ ನಿರ್ಮಾಣ ಯೋಜನೆ ಯಾವುದು? ನಿಮ್ಮ ಪಾತ್ರ ಏನಾಗಿತ್ತು?",
+          "type": "project_experience",
+          "expected_duration_sec": 75,
+          "scoring_focus": "scale of experience",
+          "rubric": "Score 1-5: Specific project (apartment, bridge, factory) + role clearly described"
+        },
+        {
+          "q_id": "R04_Q13",
+          "question_en": "Can you read basic construction drawings or follow instructions from a site engineer?",
+          "question_kn": "ನೀವು ಮೂಲ ನಿರ್ಮಾಣ ಚಿತ್ರಗಳನ್ನು ಓದಬಲ್ಲಿರಾ ಅಥವಾ ಸೈಟ್ ಎಂಜಿನಿಯರ್ ಸೂಚನೆಗಳನ್ನು ಅನುಸರಿಸಬಲ್ಲಿರಾ?",
+          "type": "technical_literacy",
+          "expected_duration_sec": 45,
+          "scoring_focus": "instruction following ability",
+          "rubric": "Score 1-5: Can follow verbal + basic drawn instructions = ready for supervised work"
+        },
+        {
+          "q_id": "R04_Q14",
+          "question_en": "Are you willing to work on night shifts or in difficult weather conditions when required?",
+          "question_kn": "ಅಗತ್ಯವಿದ್ದಾಗ ರಾತ್ರಿ ಪಾಳಿ ಅಥವಾ ಕಠಿಣ ಹವಾಮಾನದಲ್ಲಿ ಕೆಲಸ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "work_readiness",
+          "expected_duration_sec": 30,
+          "scoring_focus": "work flexibility",
+          "rubric": "Score 1-5: Willingness with past experience = strong; hesitance = lower"
+        },
+        {
+          "q_id": "R04_Q15",
+          "question_en": "Do you have a labour card or BOCW (Building and Other Construction Workers) registration?",
+          "question_kn": "ನಿಮ್ಮ ಬಳಿ ಲೇಬರ್ ಕಾರ್ಡ್ ಅಥವಾ BOCW ನೋಂದಣಿ ಇದೆಯೇ?",
+          "type": "qualifications",
+          "expected_duration_sec": 30,
+          "scoring_focus": "formal registration status",
+          "rubric": "Score 1-5: Registered = strong; willing to register = medium; unaware = needs support"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "role": "Security Guard",
+      "category": "Semi-skilled",
+      "language_support": ["Kannada", "Hindi", "English"],
+      "questions": [
+        {
+          "q_id": "R05_Q01",
+          "question_en": "Please introduce yourself — your name, age, and previous work experience.",
+          "question_kn": "ನಿಮ್ಮ ಪರಿಚಯ ಮಾಡಿಕೊಳ್ಳಿ — ನಿಮ್ಮ ಹೆಸರು, ವಯಸ್ಸು ಮತ್ತು ಹಿಂದಿನ ಕೆಲಸದ ಅನುಭವ.",
+          "type": "introduction",
+          "expected_duration_sec": 45,
+          "scoring_focus": "communication, demeanor",
+          "rubric": "Score 1-5: Clear confident introduction — tone and posture matter for security role"
+        },
+        {
+          "q_id": "R05_Q02",
+          "question_en": "What are the main duties of a security guard at a commercial building or factory?",
+          "question_kn": "ವಾಣಿಜ್ಯ ಕಟ್ಟಡ ಅಥವಾ ಕಾರ್ಖಾನೆಯಲ್ಲಿ ಭದ್ರತಾ ಗಾರ್ಡ್‌ನ ಮುಖ್ಯ ಕರ್ತವ್ಯಗಳು ಯಾವುವು?",
+          "type": "role_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "duty awareness",
+          "rubric": "Score 1-5: Access control, patrolling, visitor management, emergency response — 3+ mentioned"
+        },
+        {
+          "q_id": "R05_Q03",
+          "question_en": "If you see a suspicious person loitering near the premises, what steps would you take?",
+          "question_kn": "ಸಂಶಯಾಸ್ಪದ ವ್ಯಕ್ತಿ ಆವರಣದ ಸಮೀಪ ಓಡಾಡುತ್ತಿದ್ದರೆ ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+          "type": "situational_judgement",
+          "expected_duration_sec": 75,
+          "scoring_focus": "threat response logic",
+          "rubric": "Score 1-5: Observe, approach politely, verify ID, inform supervisor, document — logical steps"
+        },
+        {
+          "q_id": "R05_Q04",
+          "question_en": "Have you handled emergency situations like fire, medical emergencies, or theft? Describe one.",
+          "question_kn": "ಬೆಂಕಿ, ವೈದ್ಯಕೀಯ ತುರ್ತು ಅಥವಾ ಕಳ್ಳತನದಂತಹ ತುರ್ತು ಪರಿಸ್ಥಿತಿ ನಿಭಾಯಿಸಿದ್ದೀರಾ?",
+          "type": "practical_experience",
+          "expected_duration_sec": 75,
+          "scoring_focus": "real emergency handling",
+          "rubric": "Score 1-5: Specific incident + calm step-by-step response = high score"
+        },
+        {
+          "q_id": "R05_Q05",
+          "question_en": "Are you physically fit? Can you stand or patrol for long hours, including night shifts?",
+          "question_kn": "ನೀವು ದೈಹಿಕವಾಗಿ ಸದೃಢರಾಗಿದ್ದೀರಾ? ರಾತ್ರಿ ಪಾಳಿ ಸೇರಿದಂತೆ ದೀರ್ಘ ಸಮಯ ಗಸ್ತು ಮಾಡಬಲ್ಲಿರಾ?",
+          "type": "physical_readiness",
+          "expected_duration_sec": 30,
+          "scoring_focus": "physical fitness",
+          "rubric": "Score 1-5: Confident yes with history of similar work = strong"
+        },
+        {
+          "q_id": "R05_Q06",
+          "question_en": "Do you know how to use a metal detector or CCTV monitoring system?",
+          "question_kn": "ಮೆಟಲ್ ಡಿಟೆಕ್ಟರ್ ಅಥವಾ CCTV ಮಾನಿಟರಿಂಗ್ ಸಿಸ್ಟಮ್ ಬಳಸಲು ನಿಮಗೆ ಗೊತ್ತೇ?",
+          "type": "tools_knowledge",
+          "expected_duration_sec": 45,
+          "scoring_focus": "security equipment knowledge",
+          "rubric": "Score 1-5: Prior use of either tool = strong; basic awareness = medium"
+        },
+        {
+          "q_id": "R05_Q07",
+          "question_en": "How would you manage a large crowd of people entering a premises during an event?",
+          "question_kn": "ಕಾರ್ಯಕ್ರಮದ ಸಮಯದಲ್ಲಿ ದೊಡ್ಡ ಗುಂಪು ಬಂದರೆ ಹೇಗೆ ನಿರ್ವಹಿಸುತ್ತೀರಿ?",
+          "type": "crowd_management",
+          "expected_duration_sec": 60,
+          "scoring_focus": "crowd control awareness",
+          "rubric": "Score 1-5: Queue management, ID checking, calm communication — systematic approach"
+        },
+        {
+          "q_id": "R05_Q08",
+          "question_en": "Have you served in the military, police, or home guards? If yes, describe your role.",
+          "question_kn": "ನೀವು ಸೇನೆ, ಪೊಲೀಸ್ ಅಥವಾ ಹೋಮ್ ಗಾರ್ಡ್‌ನಲ್ಲಿ ಸೇವೆ ಸಲ್ಲಿಸಿದ್ದೀರಾ?",
+          "type": "qualifications",
+          "expected_duration_sec": 60,
+          "scoring_focus": "discipline, prior service",
+          "rubric": "Score 1-5: Prior uniformed service = highest score; related training = medium"
+        },
+        {
+          "q_id": "R05_Q09",
+          "question_en": "How do you handle a situation where an employee or visitor refuses to follow security rules?",
+          "question_kn": "ಉದ್ಯೋಗಿ ಅಥವಾ ಸಂದರ್ಶಕ ಭದ್ರತಾ ನಿಯಮಗಳನ್ನು ಪಾಲಿಸಲು ನಿರಾಕರಿಸಿದರೆ ನೀವು ಹೇಗೆ ನಿಭಾಯಿಸುತ್ತೀರಿ?",
+          "type": "conflict_resolution",
+          "expected_duration_sec": 60,
+          "scoring_focus": "de-escalation skills",
+          "rubric": "Score 1-5: Polite firmness, escalate to supervisor — non-violent resolution approach"
+        },
+        {
+          "q_id": "R05_Q10",
+          "question_en": "Can you write a basic incident report in Kannada or English? Describe what such a report includes.",
+          "question_kn": "ಒಂದು ಮೂಲ ಘಟನೆ ವರದಿ ಬರೆಯಬಲ್ಲಿರಾ? ಅಂಥ ವರದಿಯಲ್ಲಿ ಏನು ಇರಬೇಕು?",
+          "type": "documentation_skills",
+          "expected_duration_sec": 45,
+          "scoring_focus": "reporting ability",
+          "rubric": "Score 1-5: Date, time, location, description, action taken — basic report structure"
+        },
+        {
+          "q_id": "R05_Q11",
+          "question_en": "Do you have a valid Private Security Agency (PSARA) training certificate?",
+          "question_kn": "ನಿಮ್ಮ ಬಳಿ PSARA ತರಬೇತಿ ಪ್ರಮಾಣಪತ್ರ ಇದೆಯೇ?",
+          "type": "qualifications",
+          "expected_duration_sec": 30,
+          "scoring_focus": "legal compliance",
+          "rubric": "Score 1-5: PSARA certified = job-ready; willing to get = trainable"
+        },
+        {
+          "q_id": "R05_Q12",
+          "question_en": "What would you do if you discover a fire in the building during your shift?",
+          "question_kn": "ನಿಮ್ಮ ಪಾಳಿಯಲ್ಲಿ ಕಟ್ಟಡದಲ್ಲಿ ಬೆಂಕಿ ಕಂಡುಬಂದರೆ ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+          "type": "emergency_response",
+          "expected_duration_sec": 60,
+          "scoring_focus": "fire response protocol",
+          "rubric": "Score 1-5: Alert, evacuate, call fire service, use extinguisher if safe — correct sequence"
+        },
+        {
+          "q_id": "R05_Q13",
+          "question_en": "Are you comfortable working 12-hour shifts including night duties and rotating schedules?",
+          "question_kn": "12 ಗಂಟೆ ಪಾಳಿ, ರಾತ್ರಿ ಕೆಲಸ ಮತ್ತು ಬದಲಾಗುವ ವೇಳಾಪಟ್ಟಿಯಲ್ಲಿ ಕೆಲಸ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "work_readiness",
+          "expected_duration_sec": 30,
+          "scoring_focus": "schedule flexibility",
+          "rubric": "Score 1-5: Clear yes with prior similar schedule = strong indicator"
+        },
+        {
+          "q_id": "R05_Q14",
+          "question_en": "What languages can you speak and read? This is important for communication with visitors.",
+          "question_kn": "ನೀವು ಯಾವ ಭಾಷೆಗಳನ್ನು ಮಾತನಾಡಬಲ್ಲಿರಿ ಮತ್ತು ಓದಬಲ್ಲಿರಿ?",
+          "type": "language_skills",
+          "expected_duration_sec": 30,
+          "scoring_focus": "communication capability",
+          "rubric": "Score 1-5: Kannada + any one other language = strong for local deployment"
+        },
+        {
+          "q_id": "R05_Q15",
+          "question_en": "What is your expected monthly salary and when can you join?",
+          "question_kn": "ನಿಮ್ಮ ಅಪೇಕ್ಷಿತ ಮಾಸಿಕ ವೇತನ ಎಷ್ಟು ಮತ್ತು ಯಾವಾಗ ಸೇರಬಹುದು?",
+          "type": "availability",
+          "expected_duration_sec": 30,
+          "scoring_focus": "expectation alignment",
+          "rubric": "Score 1-5: Market-realistic salary + immediate/near-term availability = job-ready"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "role": "Domestic Helper / Caretaker",
+      "category": "Semi-skilled",
+      "language_support": ["Kannada", "Hindi", "English"],
+      "questions": [
+        {
+          "q_id": "R06_Q01",
+          "question_en": "Please tell us your name, age, and what kind of household or caregiving work you have done before.",
+          "question_kn": "ನಿಮ್ಮ ಹೆಸರು, ವಯಸ್ಸು ಮತ್ತು ನೀವು ಹಿಂದೆ ಯಾವ ರೀತಿಯ ಮನೆ ಅಥವಾ ಆರೈಕೆ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ ಎಂದು ಹೇಳಿ.",
+          "type": "introduction",
+          "expected_duration_sec": 45,
+          "scoring_focus": "communication, work background",
+          "rubric": "Score 1-5: Clear gentle introduction — tone warmth matters for caretaker role"
+        },
+        {
+          "q_id": "R06_Q02",
+          "question_en": "What household tasks are you comfortable doing — cooking, cleaning, laundry, or all of them?",
+          "question_kn": "ಅಡುಗೆ, ಶುಚಿಗೊಳಿಸುವಿಕೆ, ಬಟ್ಟೆ ತೊಳೆಯುವಿಕೆ — ಯಾವ ಮನೆ ಕೆಲಸ ಮಾಡಲು ನಿಮಗೆ ಅನುಕೂಲ?",
+          "type": "skills_inventory",
+          "expected_duration_sec": 45,
+          "scoring_focus": "task versatility",
+          "rubric": "Score 1-5: More tasks confidently listed = higher versatility score"
+        },
+        {
+          "q_id": "R06_Q03",
+          "question_en": "Have you cared for elderly people or young children before? What did your daily routine look like?",
+          "question_kn": "ನೀವು ಹಿಂದೆ ವೃದ್ಧರು ಅಥವಾ ಮಕ್ಕಳ ಆರೈಕೆ ಮಾಡಿದ್ದೀರಾ? ನಿಮ್ಮ ದಿನಚರಿ ಹೇಗಿತ್ತು?",
+          "type": "practical_experience",
+          "expected_duration_sec": 75,
+          "scoring_focus": "caregiving experience",
+          "rubric": "Score 1-5: Specific daily routine for elderly/child care — bathing, feeding, medicines, mobility"
+        },
+        {
+          "q_id": "R06_Q04",
+          "question_en": "How do you handle a situation where someone in the house is feeling unwell or has fallen?",
+          "question_kn": "ಮನೆಯಲ್ಲಿ ಯಾರಾದರೂ ಅಸ್ವಸ್ಥರಾದರೆ ಅಥವಾ ಬಿದ್ದರೆ ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+          "type": "emergency_response",
+          "expected_duration_sec": 60,
+          "scoring_focus": "first response awareness",
+          "rubric": "Score 1-5: Stay calm, inform family/employer, call doctor if needed — sensible steps"
+        },
+        {
+          "q_id": "R06_Q05",
+          "question_en": "Are you comfortable living in the employer's home if required? Have you done live-in work before?",
+          "question_kn": "ಅಗತ್ಯವಿದ್ದರೆ ಉದ್ಯೋಗದಾತರ ಮನೆಯಲ್ಲಿ ವಾಸಿಸಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "work_readiness",
+          "expected_duration_sec": 30,
+          "scoring_focus": "live-in flexibility",
+          "rubric": "Score 1-5: Yes with prior live-in experience = strong; willing = medium"
+        },
+        {
+          "q_id": "R06_Q06",
+          "question_en": "What cooking styles or cuisines can you prepare? Do you have experience with special dietary needs?",
+          "question_kn": "ನೀವು ಯಾವ ರೀತಿಯ ಅಡುಗೆ ತಯಾರಿಸಬಲ್ಲಿರಿ? ವಿಶೇಷ ಆಹಾರ ಅಗತ್ಯಗಳ ಅನುಭವ ಇದೆಯೇ?",
+          "type": "cooking_skills",
+          "expected_duration_sec": 60,
+          "scoring_focus": "cuisine range",
+          "rubric": "Score 1-5: South Indian + North Indian + any special diet knowledge = high score"
+        },
+        {
+          "q_id": "R06_Q07",
+          "question_en": "How do you maintain cleanliness and hygiene in a household? Walk us through your cleaning routine.",
+          "question_kn": "ಮನೆಯಲ್ಲಿ ಸ್ವಚ್ಛತೆ ಮತ್ತು ನೈರ್ಮಲ್ಯ ಹೇಗೆ ಕಾಪಾಡುತ್ತೀರಿ? ನಿಮ್ಮ ಶುಚಿಗೊಳಿಸುವ ದಿನಚರಿ ವಿವರಿಸಿ.",
+          "type": "hygiene_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "cleanliness standards",
+          "rubric": "Score 1-5: Systematic room-by-room approach + disinfection awareness = high"
+        },
+        {
+          "q_id": "R06_Q08",
+          "question_en": "Have you given medicine or managed a medical care routine for an elderly person? How did you handle it?",
+          "question_kn": "ವೃದ್ಧ ವ್ಯಕ್ತಿಗೆ ಔಷಧಿ ನೀಡಿದ್ದೀರಾ ಅಥವಾ ವೈದ್ಯಕೀಯ ದಿನಚರಿ ನಿರ್ವಹಿಸಿದ್ದೀರಾ?",
+          "type": "medical_assistance",
+          "expected_duration_sec": 60,
+          "scoring_focus": "medical caregiving ability",
+          "rubric": "Score 1-5: Timely medicines, recording dosage, doctor follow-up awareness = high"
+        },
+        {
+          "q_id": "R06_Q09",
+          "question_en": "How do you handle conflicts or difficult behaviour from the people you care for?",
+          "question_kn": "ನೀವು ಆರೈಕೆ ಮಾಡುವ ವ್ಯಕ್ತಿಯಿಂದ ಕಷ್ಟದ ನಡವಳಿಕೆ ಎದುರಾದಾಗ ಹೇಗೆ ನಿಭಾಯಿಸುತ್ತೀರಿ?",
+          "type": "interpersonal_skills",
+          "expected_duration_sec": 60,
+          "scoring_focus": "patience, emotional handling",
+          "rubric": "Score 1-5: Calm, empathetic, non-confrontational response = strong caregiving fit"
+        },
+        {
+          "q_id": "R06_Q10",
+          "question_en": "Do you have any first aid knowledge? What would you do if someone has a seizure or is choking?",
+          "question_kn": "ನಿಮಗೆ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ ಗೊತ್ತೇ? ಯಾರಾದರೂ ಸೆಳವು ಅಥವಾ ಉಸಿರು ಕಟ್ಟಿದರೆ ಏನು ಮಾಡುತ್ತೀರಿ?",
+          "type": "emergency_response",
+          "expected_duration_sec": 60,
+          "scoring_focus": "first aid awareness",
+          "rubric": "Score 1-5: Do not restrain seizure, clear airway, call 108 — any correct knowledge"
+        },
+        {
+          "q_id": "R06_Q11",
+          "question_en": "Are you comfortable caring for someone with physical disabilities or special needs?",
+          "question_kn": "ದೈಹಿಕ ವಿಕಲಾಂಗತೆ ಅಥವಾ ವಿಶೇಷ ಅವಶ್ಯಕತೆ ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಯ ಆರೈಕೆ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "specialised_care",
+          "expected_duration_sec": 45,
+          "scoring_focus": "inclusiveness, adaptability",
+          "rubric": "Score 1-5: Positive attitude + any prior experience with special needs = strong"
+        },
+        {
+          "q_id": "R06_Q12",
+          "question_en": "What do you do in your free time? Do you read, watch educational content, or take any training?",
+          "question_kn": "ನಿಮ್ಮ ಬಿಡುವಿನ ವೇಳೆಯಲ್ಲಿ ಏನು ಮಾಡುತ್ತೀರಿ? ಯಾವುದಾದರೂ ತರಬೇತಿ ತೆಗೆದುಕೊಂಡಿದ್ದೀರಾ?",
+          "type": "learning_attitude",
+          "expected_duration_sec": 45,
+          "scoring_focus": "self-improvement mindset",
+          "rubric": "Score 1-5: Any learning activity = positive; training in caregiving = strong bonus"
+        },
+        {
+          "q_id": "R06_Q13",
+          "question_en": "Do you have any references from previous employers who can verify your work?",
+          "question_kn": "ನಿಮ್ಮ ಹಿಂದಿನ ಉದ್ಯೋಗದಾತರಿಂದ ಉಲ್ಲೇಖ ನೀಡಬಲ್ಲಿರಾ?",
+          "type": "verification",
+          "expected_duration_sec": 30,
+          "scoring_focus": "trust and verifiability",
+          "rubric": "Score 1-5: Yes with contact details = strong trust signal; no reference = needs investigation"
+        },
+        {
+          "q_id": "R06_Q14",
+          "question_en": "Are you comfortable working in any part of Karnataka or only in your home district?",
+          "question_kn": "ನೀವು ಕರ್ನಾಟಕದ ಯಾವ ಭಾಗದಲ್ಲಾದರೂ ಕೆಲಸ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ ಅಥವಾ ಕೇವಲ ನಿಮ್ಮ ಜಿಲ್ಲೆಯಲ್ಲಿ?",
+          "type": "mobility_preference",
+          "expected_duration_sec": 30,
+          "scoring_focus": "deployment flexibility",
+          "rubric": "Score 1-5: Any district = high mobility; only local = restricted placement"
+        },
+        {
+          "q_id": "R06_Q15",
+          "question_en": "What monthly salary do you expect and are you available to start work immediately?",
+          "question_kn": "ನಿಮ್ಮ ಮಾಸಿಕ ವೇತನ ನಿರೀಕ್ಷೆ ಏನು ಮತ್ತು ತಕ್ಷಣ ಕೆಲಸ ಪ್ರಾರಂಭಿಸಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "availability",
+          "expected_duration_sec": 30,
+          "scoring_focus": "expectation match",
+          "rubric": "Score 1-5: Realistic salary + immediate availability = job-ready classification"
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "role": "Factory Floor Worker",
+      "category": "Semi-skilled",
+      "language_support": ["Kannada", "Hindi", "English"],
+      "questions": [
+        {
+          "q_id": "R07_Q01",
+          "question_en": "Tell us your name, where you are from, and what kind of factory work you have done before.",
+          "question_kn": "ನಿಮ್ಮ ಹೆಸರು, ಎಲ್ಲಿಂದ ಬಂದಿದ್ದೀರಿ ಮತ್ತು ಹಿಂದೆ ಯಾವ ರೀತಿಯ ಕಾರ್ಖಾನೆ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ ಹೇಳಿ.",
+          "type": "introduction",
+          "expected_duration_sec": 45,
+          "scoring_focus": "communication, factory background",
+          "rubric": "Score 1-5: Name + origin + factory type (food/auto/packaging/etc.) described"
+        },
+        {
+          "q_id": "R07_Q02",
+          "question_en": "Have you worked on an assembly line or production line? Describe your role and the product being made.",
+          "question_kn": "ನೀವು ಅಸೆಂಬ್ಲಿ ಲೈನ್ ಅಥವಾ ಉತ್ಪಾದನಾ ಲೈನ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+          "type": "practical_experience",
+          "expected_duration_sec": 75,
+          "scoring_focus": "production line familiarity",
+          "rubric": "Score 1-5: Specific product line + role + daily output awareness = strong"
+        },
+        {
+          "q_id": "R07_Q03",
+          "question_en": "What safety rules are important to follow when working around heavy machines on the factory floor?",
+          "question_kn": "ಕಾರ್ಖಾನೆ ಮಹಡಿಯಲ್ಲಿ ಭಾರೀ ಯಂತ್ರಗಳ ಸಮೀಪ ಕೆಲಸ ಮಾಡುವಾಗ ಯಾವ ಸುರಕ್ಷತಾ ನಿಯಮಗಳು ಮುಖ್ಯ?",
+          "type": "safety_awareness",
+          "expected_duration_sec": 60,
+          "scoring_focus": "machine safety habits",
+          "rubric": "Score 1-5: PPE, lockout/tagout awareness, no loose clothing, stay in marked zones"
+        },
+        {
+          "q_id": "R07_Q04",
+          "question_en": "Can you operate basic factory machines like conveyors, packing machines, or press machines?",
+          "question_kn": "ಕನ್ವೇಯರ್, ಪ್ಯಾಕಿಂಗ್ ಯಂತ್ರ ಅಥವಾ ಪ್ರೆಸ್ ಯಂತ್ರದಂತಹ ಮೂಲ ಕಾರ್ಖಾನೆ ಯಂತ್ರಗಳನ್ನು ನಿರ್ವಹಿಸಬಲ್ಲಿರಾ?",
+          "type": "machine_operation",
+          "expected_duration_sec": 60,
+          "scoring_focus": "machine handling confidence",
+          "rubric": "Score 1-5: Any 2+ machines operated with specific experience = strong"
+        },
+        {
+          "q_id": "R07_Q05",
+          "question_en": "How do you ensure quality when doing repetitive tasks on a production line?",
+          "question_kn": "ಉತ್ಪಾದನಾ ಲೈನ್‌ನಲ್ಲಿ ಪುನರಾವರ್ತಿತ ಕೆಲಸ ಮಾಡುವಾಗ ಗುಣಮಟ್ಟ ಹೇಗೆ ಖಚಿತಪಡಿಸುತ್ತೀರಿ?",
+          "type": "quality_awareness",
+          "expected_duration_sec": 60,
+          "scoring_focus": "attention to detail",
+          "rubric": "Score 1-5: Visual inspection, rejecting defects, reporting issues to supervisor"
+        },
+        {
+          "q_id": "R07_Q06",
+          "question_en": "Have you done packaging, sorting, or labelling work? Describe the type of product you handled.",
+          "question_kn": "ನೀವು ಪ್ಯಾಕೇಜಿಂಗ್, ವಿಂಗಡಣೆ ಅಥವಾ ಲೇಬಲಿಂಗ್ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+          "type": "task_experience",
+          "expected_duration_sec": 60,
+          "scoring_focus": "packaging/handling exposure",
+          "rubric": "Score 1-5: Specific product type + volume handled + speed awareness"
+        },
+        {
+          "q_id": "R07_Q07",
+          "question_en": "What would you do if you noticed a defective product on the production line?",
+          "question_kn": "ಉತ್ಪಾದನಾ ಲೈನ್‌ನಲ್ಲಿ ದೋಷಪೂರಿತ ಉತ್ಪನ್ನ ಕಂಡುಬಂದರೆ ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+          "type": "quality_control",
+          "expected_duration_sec": 45,
+          "scoring_focus": "quality process adherence",
+          "rubric": "Score 1-5: Stop, remove defect, inform supervisor, document = correct response"
+        },
+        {
+          "q_id": "R07_Q08",
+          "question_en": "Can you lift and carry heavy materials like boxes or bags regularly as part of your work?",
+          "question_kn": "ನೀವು ನಿಯಮಿತವಾಗಿ ಭಾರವಾದ ಪೆಟ್ಟಿಗೆ ಅಥವಾ ಚೀಲಗಳನ್ನು ಎತ್ತಿ ಸಾಗಿಸಬಲ್ಲಿರಾ?",
+          "type": "physical_readiness",
+          "expected_duration_sec": 30,
+          "scoring_focus": "physical capability",
+          "rubric": "Score 1-5: Yes with weight range mentioned + safe lifting knowledge = strong"
+        },
+        {
+          "q_id": "R07_Q09",
+          "question_en": "Have you worked in food processing, pharmaceutical, or chemical factories? What hygiene rules did you follow?",
+          "question_kn": "ಆಹಾರ ಸಂಸ್ಕರಣ, ಔಷಧ ಅಥವಾ ರಾಸಾಯನಿಕ ಕಾರ್ಖಾನೆಯಲ್ಲಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+          "type": "specialised_experience",
+          "expected_duration_sec": 60,
+          "scoring_focus": "regulated industry experience",
+          "rubric": "Score 1-5: GMP, hygiene gowning, no jewellery, hair net — any industry-specific knowledge"
+        },
+        {
+          "q_id": "R07_Q10",
+          "question_en": "Are you comfortable working in rotating shifts — morning, afternoon, and night?",
+          "question_kn": "ಬೆಳಿಗ್ಗೆ, ಮಧ್ಯಾಹ್ನ ಮತ್ತು ರಾತ್ರಿ ಪಾಳಿಗಳಲ್ಲಿ ಕೆಲಸ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "work_readiness",
+          "expected_duration_sec": 30,
+          "scoring_focus": "shift flexibility",
+          "rubric": "Score 1-5: Yes with prior shift experience = job-ready for factory deployment"
+        },
+        {
+          "q_id": "R07_Q11",
+          "question_en": "Have you ever operated a forklift or any material handling equipment?",
+          "question_kn": "ನೀವು ಎಂದಾದರೂ ಫೋರ್ಕ್‌ಲಿಫ್ಟ್ ಅಥವಾ ಸಾಮಗ್ರಿ ನಿರ್ವಹಣಾ ಉಪಕರಣ ಬಳಸಿದ್ದೀರಾ?",
+          "type": "advanced_skills",
+          "expected_duration_sec": 45,
+          "scoring_focus": "equipment operation bonus",
+          "rubric": "Score 1-5: Forklift license = strong bonus; hand pallet, trolley also valued"
+        },
+        {
+          "q_id": "R07_Q12",
+          "question_en": "What is 5S and have you ever worked in a factory that followed 5S principles?",
+          "question_kn": "5S ಎಂದರೇನು? ನೀವು 5S ತತ್ವಗಳನ್ನು ಅನುಸರಿಸುವ ಕಾರ್ಖಾನೆಯಲ್ಲಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+          "type": "workplace_standards",
+          "expected_duration_sec": 60,
+          "scoring_focus": "lean manufacturing awareness",
+          "rubric": "Score 1-5: Sort, Set, Shine, Standardise, Sustain — any awareness = high-value worker"
+        },
+        {
+          "q_id": "R07_Q13",
+          "question_en": "What do you do if your machine breaks down or malfunctions during production?",
+          "question_kn": "ಉತ್ಪಾದನೆ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮ ಯಂತ್ರ ಕೆಟ್ಟು ಹೋದರೆ ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+          "type": "problem_response",
+          "expected_duration_sec": 45,
+          "scoring_focus": "escalation procedure",
+          "rubric": "Score 1-5: Stop machine, inform supervisor/maintenance, do not self-repair = correct"
+        },
+        {
+          "q_id": "R07_Q14",
+          "question_en": "Are you willing to work overtime when production targets need to be met?",
+          "question_kn": "ಉತ್ಪಾದನಾ ಗುರಿ ಸಾಧಿಸಲು ಅಗತ್ಯವಿದ್ದಾಗ ಹೆಚ್ಚುವರಿ ಸಮಯ ಕೆಲಸ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "work_readiness",
+          "expected_duration_sec": 30,
+          "scoring_focus": "commitment to production goals",
+          "rubric": "Score 1-5: Clear yes with previous OT experience = strong factory floor fit"
+        },
+        {
+          "q_id": "R07_Q15",
+          "question_en": "What is your expected daily wage and are you registered with any labour welfare board?",
+          "question_kn": "ನಿಮ್ಮ ದಿನದ ಸಂಬಳ ನಿರೀಕ್ಷೆ ಏನು ಮತ್ತು ಕಾರ್ಮಿಕ ಕಲ್ಯಾಣ ಮಂಡಳಿಯಲ್ಲಿ ನೋಂದಾಯಿಸಲಾಗಿದೆಯೇ?",
+          "type": "availability",
+          "expected_duration_sec": 30,
+          "scoring_focus": "wage expectation + compliance",
+          "rubric": "Score 1-5: Realistic wage + registration awareness = compliant candidate"
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "role": "Garment / Textile Worker",
+      "category": "Semi-skilled",
+      "language_support": ["Kannada", "Hindi", "English"],
+      "questions": [
+        {
+          "q_id": "R08_Q01",
+          "question_en": "Please introduce yourself and tell us what garment or textile work you have done.",
+          "question_kn": "ನಿಮ್ಮನ್ನು ಪರಿಚಯಿಸಿಕೊಳ್ಳಿ ಮತ್ತು ನೀವು ಯಾವ ಬಟ್ಟೆ ಅಥವಾ ಜವಳಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ ಎಂದು ಹೇಳಿ.",
+          "type": "introduction",
+          "expected_duration_sec": 45,
+          "scoring_focus": "communication, textile background",
+          "rubric": "Score 1-5: Name + garment type (stitching, weaving, finishing, quality check)"
+        },
+        {
+          "q_id": "R08_Q02",
+          "question_en": "Can you operate a sewing machine? What types of machines have you used — flat lock, overlock, or single needle?",
+          "question_kn": "ನೀವು ಹೊಲಿಗೆ ಯಂತ್ರ ನಿರ್ವಹಿಸಬಲ್ಲಿರಾ? ಫ್ಲ್ಯಾಟ್ ಲಾಕ್, ಓವರ್‌ಲಾಕ್ ಅಥವಾ ಸಿಂಗಲ್ ನೀಡಲ್ — ಯಾವ ಯಂತ್ರ ಬಳಸಿದ್ದೀರಿ?",
+          "type": "machine_operation",
+          "expected_duration_sec": 60,
+          "scoring_focus": "sewing machine proficiency",
+          "rubric": "Score 1-5: More machine types = higher score; specific names mentioned = strong"
+        },
+        {
+          "q_id": "R08_Q03",
+          "question_en": "What is your daily production target and how consistently have you met it in your previous job?",
+          "question_kn": "ನಿಮ್ಮ ದಿನದ ಉತ್ಪಾದನಾ ಗುರಿ ಎಷ್ಟಿತ್ತು ಮತ್ತು ನೀವು ಅದನ್ನು ಎಷ್ಟು ಸ್ಥಿರವಾಗಿ ಪೂರೈಸಿದ್ದೀರಿ?",
+          "type": "productivity",
+          "expected_duration_sec": 60,
+          "scoring_focus": "output rate awareness",
+          "rubric": "Score 1-5: Specific number (e.g. 300 pieces/day) + consistency record mentioned"
+        },
+        {
+          "q_id": "R08_Q04",
+          "question_en": "What types of garments have you worked on — shirts, trousers, ethnic wear, sportswear, or others?",
+          "question_kn": "ನೀವು ಯಾವ ರೀತಿಯ ಉಡುಪುಗಳ ಮೇಲೆ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ — ಶರ್ಟ್, ಪ್ಯಾಂಟ್, ಎಥ್ನಿಕ್ ಅಥವಾ ಸ್ಪೋರ್ಟ್ಸ್‌ವೇರ್?",
+          "type": "product_experience",
+          "expected_duration_sec": 45,
+          "scoring_focus": "garment category exposure",
+          "rubric": "Score 1-5: Multiple categories + export vs domestic market awareness = strong"
+        },
+        {
+          "q_id": "R08_Q05",
+          "question_en": "What do you do if the thread keeps breaking or the machine is skipping stitches?",
+          "question_kn": "ದಾರ ಪದೇ ಪದೇ ತುಂಡಾದರೆ ಅಥವಾ ಯಂತ್ರ ಹೊಲಿಗೆ ಬಿಟ್ಟರೆ ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+          "type": "problem_solving",
+          "expected_duration_sec": 60,
+          "scoring_focus": "machine troubleshooting",
+          "rubric": "Score 1-5: Check tension, rethread, needle change — practical machine knowledge"
+        },
+        {
+          "q_id": "R08_Q06",
+          "question_en": "Do you know how to read a garment measurement chart or cut a pattern from a measurement sheet?",
+          "question_kn": "ಬಟ್ಟೆ ಅಳತೆ ಚಾರ್ಟ್ ಓದಲು ಅಥವಾ ಅಳತೆ ಪತ್ರಿಕೆಯಿಂದ ಮಾದರಿ ಕತ್ತರಿಸಲು ನಿಮಗೆ ಗೊತ್ತೇ?",
+          "type": "technical_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "pattern/measurement literacy",
+          "rubric": "Score 1-5: Reading size charts + basic cutting from patterns = skilled operator level"
+        },
+        {
+          "q_id": "R08_Q07",
+          "question_en": "Have you done quality checking of finished garments? What defects do you look for?",
+          "question_kn": "ಸಿದ್ಧ ಉಡುಪುಗಳ ಗುಣಮಟ್ಟ ಪರಿಶೀಲನೆ ಮಾಡಿದ್ದೀರಾ? ಯಾವ ದೋಷಗಳನ್ನು ನೋಡುತ್ತೀರಿ?",
+          "type": "quality_control",
+          "expected_duration_sec": 60,
+          "scoring_focus": "QC knowledge",
+          "rubric": "Score 1-5: Skip stitches, loose threads, size mismatch, colour bleeding — any 3 = strong"
+        },
+        {
+          "q_id": "R08_Q08",
+          "question_en": "What fabrics have you worked with — cotton, polyester, silk, denim? Any special handling needed?",
+          "question_kn": "ನೀವು ಯಾವ ಬಟ್ಟೆಗಳೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ — ಹತ್ತಿ, ಪಾಲಿಯೆಸ್ಟರ್, ರೇಷ್ಮೆ, ಡೆನಿಮ್?",
+          "type": "materials_knowledge",
+          "expected_duration_sec": 60,
+          "scoring_focus": "fabric handling versatility",
+          "rubric": "Score 1-5: 3+ fabrics + special care knowledge (denim needle, silk tension) = expert"
+        },
+        {
+          "q_id": "R08_Q09",
+          "question_en": "Are you familiar with export quality standards? Have you worked in an export-oriented unit?",
+          "question_kn": "ರಫ್ತು ಗುಣಮಟ್ಟ ಮಾನದಂಡಗಳ ಪರಿಚಯ ಇದೆಯೇ? ರಫ್ತು-ಆಧಾರಿತ ಘಟಕದಲ್ಲಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಾ?",
+          "type": "advanced_experience",
+          "expected_duration_sec": 60,
+          "scoring_focus": "export quality exposure",
+          "rubric": "Score 1-5: AQL, buyer inspection awareness, zero defect mentality = high-value candidate"
+        },
+        {
+          "q_id": "R08_Q10",
+          "question_en": "How do you maintain your work area and sewing machine to ensure it stays in good condition?",
+          "question_kn": "ಉತ್ತಮ ಸ್ಥಿತಿಯಲ್ಲಿಡಲು ನಿಮ್ಮ ಕೆಲಸದ ಸ್ಥಳ ಮತ್ತು ಹೊಲಿಗೆ ಯಂತ್ರವನ್ನು ಹೇಗೆ ಸಂರಕ್ಷಿಸುತ್ತೀರಿ?",
+          "type": "machine_maintenance",
+          "expected_duration_sec": 45,
+          "scoring_focus": "machine care habits",
+          "rubric": "Score 1-5: Daily cleaning, oiling, needle change schedule, bobbin check = responsible operator"
+        },
+        {
+          "q_id": "R08_Q11",
+          "question_en": "Have you trained or guided new workers on the production floor? Describe your experience.",
+          "question_kn": "ನೀವು ಉತ್ಪಾದನಾ ಮಹಡಿಯಲ್ಲಿ ಹೊಸ ಕಾರ್ಮಿಕರಿಗೆ ತರಬೇತಿ ನೀಡಿದ್ದೀರಾ?",
+          "type": "leadership_potential",
+          "expected_duration_sec": 45,
+          "scoring_focus": "training/mentoring experience",
+          "rubric": "Score 1-5: Training experience = supervisor/team lead potential flagged in system"
+        },
+        {
+          "q_id": "R08_Q12",
+          "question_en": "What is the importance of ergonomics while operating a sewing machine for long hours?",
+          "question_kn": "ಹೊಲಿಗೆ ಯಂತ್ರದಲ್ಲಿ ದೀರ್ಘ ಸಮಯ ಕೆಲಸ ಮಾಡುವಾಗ ಎರ್ಗೊನಾಮಿಕ್ಸ್ ಪ್ರಾಮುಖ್ಯತೆ ಏನು?",
+          "type": "occupational_health",
+          "expected_duration_sec": 45,
+          "scoring_focus": "health awareness",
+          "rubric": "Score 1-5: Posture, breaks, eye strain, wrist health — any 2 mentioned = aware worker"
+        },
+        {
+          "q_id": "R08_Q13",
+          "question_en": "Do you have an ITI certificate in cutting and tailoring, or any other textile-related training?",
+          "question_kn": "ಕಟಿಂಗ್ ಮತ್ತು ಟೈಲರಿಂಗ್‌ನಲ್ಲಿ ITI ಪ್ರಮಾಣಪತ್ರ ಅಥವಾ ಜವಳಿ ಸಂಬಂಧಿತ ತರಬೇತಿ ಇದೆಯೇ?",
+          "type": "qualifications",
+          "expected_duration_sec": 30,
+          "scoring_focus": "formal certification",
+          "rubric": "Score 1-5: ITI/NSDC certificate = job-ready; KVIC/skill centre training = medium"
+        },
+        {
+          "q_id": "R08_Q14",
+          "question_en": "Are you open to working in garment factories in other districts like Bengaluru, Mysuru, or Dharwad?",
+          "question_kn": "ಬೆಂಗಳೂರು, ಮೈಸೂರು ಅಥವಾ ಧಾರವಾಡದಂತಹ ಇತರ ಜಿಲ್ಲೆಗಳ ಬಟ್ಟೆ ಕಾರ್ಖಾನೆಗಳಲ್ಲಿ ಕೆಲಸ ಮಾಡಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "mobility_preference",
+          "expected_duration_sec": 30,
+          "scoring_focus": "district-level mobility",
+          "rubric": "Score 1-5: Open to Bengaluru/Mysuru clusters = highest placement potential"
+        },
+        {
+          "q_id": "R08_Q15",
+          "question_en": "What daily or monthly wage do you expect and are you available to join immediately?",
+          "question_kn": "ನಿಮ್ಮ ದಿನ/ಮಾಸಿಕ ವೇತನ ನಿರೀಕ್ಷೆ ಏನು ಮತ್ತು ತಕ್ಷಣ ಸೇರಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
+          "type": "availability",
+          "expected_duration_sec": 30,
+          "scoring_focus": "wage alignment + readiness",
+          "rubric": "Score 1-5: Market-range salary + immediate availability = job-ready category"
+        }
+      ]
+    }
+  ],
+  "fitment_scoring_guide": {
+    "score_range": "1-5 per question, 15 questions per role",
+    "max_score_per_role": 75,
+    "fitment_thresholds": {
+      "job_ready": "60-75 (80-100%)",
+      "requires_upskilling": "45-59 (60-79%)",
+      "requires_manual_review": "30-44 (40-59%)",
+      "low_confidence": "15-29 (20-39%)",
+      "poor_quality": "below 15 (under 20%)"
+    },
+    "question_type_weights": {
+      "technical_knowledge": 1.5,
+      "practical_experience": 1.5,
+      "safety_awareness": 1.3,
+      "introduction": 1.0,
+      "availability": 1.0,
+      "qualifications": 1.2
+    }
+  }
+}

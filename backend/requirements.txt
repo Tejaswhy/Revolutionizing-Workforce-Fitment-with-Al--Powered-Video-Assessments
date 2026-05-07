@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+llama-cpp-python
+googletrans==4.0.0rc1
+gtts
+openai-whisper
+numpy
+scipy
+sounddevice
+torch
+opencv-python
+librosa
+imageio
+imageio-ffmpeg
