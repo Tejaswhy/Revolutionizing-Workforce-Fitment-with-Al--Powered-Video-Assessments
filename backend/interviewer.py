@@ -35,7 +35,7 @@ translator = Translator()
 print("Loading Phi model... ⏳")
 
 llm = Llama(
-    model_path="../phi-2.Q4_K_M.gguf",
+    model_path="phi-2.Q4_K_M.gguf",
     n_ctx=512,
     n_threads=4
 )
