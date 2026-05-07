@@ -13,11 +13,11 @@ from llama_cpp import Llama
 # ==============================
 # CONFIG
 # ==============================
-face_path = "small.mp4"
+face_path = "../small.mp4"
 
-checkpoint ="wav2lip.pth"
+checkpoint = "../wav2lip.pth"
 
-output_path = "output.mp4"
+output_path = "results/output.mp4"
 
 os.makedirs(
     "results",
@@ -35,7 +35,7 @@ translator = Translator()
 print("Loading Phi model... ⏳")
 
 llm = Llama(
-    model_path="phi-2.Q4_K_M.gguf",
+    model_path="../phi-2.Q4_K_M.gguf",
     n_ctx=512,
     n_threads=4
 )
@@ -85,6 +85,7 @@ def translate_text(text, target_lang):
         print("❌ Translation Error:", e)
 
         return text
+
 # ==============================
 # ASK QUESTION
 # ==============================
@@ -97,6 +98,52 @@ def ask_question(question, lang):
 
     print("\n🤖 AI Question:")
     print(translated_question)
+
+    text_to_speech(
+        translated_question,
+        lang,
+        "q1.mp3"
+    )
+
+    # ==============================
+    # DELETE OLD VIDEO
+    # ==============================
+    if os.path.exists(output_path):
+
+        os.remove(output_path)
+
+        print("🗑 Old video deleted")
+
+    # ==============================
+    # WAV2LIP COMMAND
+    # ==============================
+    command = f"""
+    python3 inference.py \
+    --checkpoint_path "{checkpoint}" \
+    --face "{face_path}" \
+    --audio "../backend/q1.mp3" \
+    --outfile "../backend/{output_path}" \
+    --resize_factor 2 \
+    --wav2lip_batch_size 32
+    """
+
+    print("\n🎬 Running Wav2Lip...\n")
+
+    result = os.system(
+        f'cd "../Wav2Lip" && {command}'
+    )
+
+    print("\nCOMMAND RESULT:", result)
+
+    if os.path.exists(output_path):
+
+        print(f"\n✅ Video saved at:\n{output_path}")
+
+    else:
+
+        print("\n❌ Video generation failed")
+
+    return output_path
 
 # ==============================
 # TEXT TO SPEECH
@@ -120,49 +167,6 @@ def text_to_speech(
     except Exception as e:
 
         print("❌ TTS Error:", e)
-
-# ==============================
-# DELETE OLD VIDEO
-# ==============================
-if os.path.exists(output_path):
-
-    os.remove(output_path)
-
-    print("🗑 Old video deleted")
-
-# ==============================
-# WAV2LIP COMMAND
-# ==============================
-command = f"""
-python3 "Wav2Lip/inference.py" \
---checkpoint_path "{checkpoint}" \
---face "{face_path}" \
---audio "q1.mp3" \
---outfile "{output_path}" \
---resize_factor 2 \
---wav2lip_batch_size 32
-"""
-
-print("\n🎬 Running Wav2Lip...\n")
-
-print(command)
-
-result = os.system(
-    f'cd "Wav2Lip" && {command}'
-)
-
-print("\nCOMMAND RESULT:", result)
-
-if os.path.exists(output_path):
-
-    print(f"\n✅ Video saved at:\n{output_path}")
-
-else:
-
-    print("\n❌ Video generation failed")
-
-time.sleep(2)
-
 
 # ==============================
 # EXTRACT INFO
@@ -404,293 +408,3 @@ Rules:
         total_score += 1
 
         return 1
-
-# ==============================
-# MAIN FASTAPI FUNCTION
-# ==============================
-def process_interview(
-        user_text,
-        lang="en"):
-
-    global selected_role_data
-    global current_question
-
-    # ==============================
-    # START INTERVIEW
-    # ==============================
-    if user_text == "start interview":
-
-        current_question = \
-            "Tell me about yourself."
-
-        video_path = ask_question(
-            current_question,
-            lang
-        )
-
-        return {
-
-            "status":
-            "success",
-
-            "question":
-            current_question,
-
-            "video":
-            video_path,
-
-            "role":
-            "Unknown",
-
-            "skills":
-            [],
-
-            "score":
-            total_score
-        }
-
-    # ==============================
-    # EXTRACT INFO
-    # ==============================
-    raw_output = extract_info(
-        user_text
-    )
-
-    parsed = parse_json(
-        raw_output
-    )
-
-    # ==============================
-    # FALLBACK SKILLS
-    # ==============================
-    if len(parsed["skills"]) == 0:
-
-        text_lower = user_text.lower()
-
-        if "electrician" in text_lower:
-
-            parsed["skills"].append(
-                "electrician"
-            )
-
-        if "wiring" in text_lower:
-
-            parsed["skills"].append(
-                "electrical wiring"
-            )
-
-        if "electronics" in text_lower:
-
-            parsed["skills"].append(
-                "electronics"
-            )
-
-        if "construction" in text_lower:
-
-            parsed["skills"].append(
-                "construction"
-            )
-
-        if "security" in text_lower:
-
-            parsed["skills"].append(
-                "security"
-            )
-
-    # ==============================
-    # DETECT ROLE
-    # ==============================
-    if selected_role_data is None:
-
-        detected_role = detect_role(
-            parsed["skills"]
-        )
-
-        if not detected_role:
-
-            return {
-
-                "status":
-                "error",
-
-                "message":
-                "Could not detect role"
-            }
-
-        selected_role_data = \
-            get_role_data(
-                detected_role
-            )
-
-    # ==============================
-    # GENERATE NEXT QUESTION
-    # ==============================
-    next_question = \
-        generate_next_question(
-            selected_role_data,
-            asked_questions
-        )
-
-    # ==============================
-    # END INTERVIEW
-    # ==============================
-    if not next_question:
-
-        return {
-
-            "status":
-            "completed",
-
-            "score":
-            total_score
-        }
-
-    # ==============================
-    # END COMMAND
-    # ==============================
-    if "end interview" in user_text.lower():
-
-        return {
-
-            "status":
-            "completed",
-
-            "score":
-            total_score
-        }
-
-    # ==============================
-    # SCORE ANSWER
-    # ==============================
-    question_score = score_answer(
-        next_question,
-        user_text
-    )
-
-    print(
-        f"\n⭐ Question Score: "
-        f"{question_score}/5"
-    )
-
-    # ==============================
-    # SAVE HISTORY
-    # ==============================
-    conversation_history.append({
-
-        "question":
-        next_question["question_en"],
-
-        "answer":
-        user_text,
-
-        "score":
-        question_score
-    })
-
-    # ==============================
-    # ASK NEXT QUESTION
-    # ==============================
-    current_question = \
-        next_question["question_en"]
-
-    video_path = ask_question(
-        current_question,
-        lang
-    )
-
-    # ==============================
-    # RETURN
-    # ==============================
-    return {
-
-        "status":
-        "success",
-
-        "question":
-        current_question,
-
-        "video":
-        video_path,
-
-        "role":
-        selected_role_data["role"],
-
-        "skills":
-        parsed["skills"],
-
-        "score":
-        total_score
-    }
-# =====================================
-# AUDIO INTERVIEW
-# =====================================
-def process_audio_interview(
-
-    audio_path,
-
-    lang
-):
-
-    try:
-
-        # =============================
-        # SPEECH TO TEXT
-        # =============================
-        answer_text, _ = speech_to_text(
-            audio_path
-        )
-
-        print("\n📝 User Answer:")
-        print(answer_text)
-
-        # =============================
-        # PROCESS INTERVIEW
-        # =============================
-        result = process_interview(
-
-            answer_text,
-
-            lang
-        )
-
-        return result
-
-    except Exception as e:
-
-        return {
-
-            "status": "error",
-
-            "message": str(e)
-        }
-    
-# =====================================
-# WHISPER SPEECH TO TEXT
-# =====================================
-def speech_to_text(audio_path):
-
-    try:
-
-        import whisper
-
-        model = whisper.load_model("base")
-
-        result = model.transcribe(audio_path)
-
-        detected_text = result["text"]
-
-        detected_lang = result["language"]
-
-        print("\n🌍 Detected Language:")
-        print(detected_lang)
-
-        print("\n📝 Candidate Answer:")
-        print(detected_text)
-
-        return detected_text, detected_lang
-
-    except Exception as e:
-
-        print("❌ Speech To Text Error:", e)
-
-        return "", "en"
